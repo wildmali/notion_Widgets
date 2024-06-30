@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 
-    <title>Time Left in 2025</title>
+    <title>Time Left in 2024</title>
     <style>
         
         body{
@@ -39,7 +39,7 @@
 <body>
     <div id="counter">
         <h2>
-            Time left in 2024
+            Time left in 2025
         </h2>    
         
             <h2 class="box" id="days"></h2>
@@ -67,7 +67,7 @@
     function showRemaining (){
     now = new Date();
     distance = end - now;
-    distance2 = new Date("01/01/2025 00:00 AM") - now
+    distance2 = new Date("01/01/2024 00:00 AM") - now
     if (distance <= 0 ){
       clearInterval (timer)
       document.getElementById("counter").innerHTML = "<h2>Nothing! It's Over<h2>";
@@ -75,7 +75,7 @@
     }
     else if (distance2 > 0  ){
       clearInterval (timer)
-      document.getElementById("counter").innerHTML =  "<h2>2025 Didn't Start yet!</h2>";
+      document.getElementById("counter").innerHTML =  "<h2>2024 Didn't Start yet!</h2>";
       return
     } 
     days = Math.floor(distance / _day)
